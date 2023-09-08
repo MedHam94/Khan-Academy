@@ -1,0 +1,150 @@
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  text-align: center;
+  border-bottom: 1px solid gray;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header nav .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+header nav .left i {
+  display: none;
+}
+@media (max-width: 620px) {
+  header nav .left i {
+    display: block;
+    color: blue;
+    padding-left: 20px;
+  }
+}
+header nav .left input {
+  width: 60%;
+}
+@media (max-width: 620px) {
+  header nav .left input {
+    display: none;
+  }
+}
+header nav .right ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  width: 250px;
+}
+@media (max-width: 620px) {
+  header nav .right ul {
+    width: 160px;
+  }
+}
+header nav .right ul li {
+  flex-basis: 30%;
+}
+@media (max-width: 620px) {
+  header nav .right ul li {
+    display: none;
+  }
+}
+header nav .right ul li:first-child {
+  display: none;
+}
+@media (max-width: 620px) {
+  header nav .right ul li:first-child {
+    display: block;
+  }
+}
+
+main {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 100px;
+  font-family: "Rubik", sans-serif;
+}
+@media (max-width: 620px) {
+  main {
+    flex-direction: column;
+    padding-top: 30px;
+    align-items: center;
+  }
+}
+main .left {
+  width: 50%;
+}
+@media (max-width: 620px) {
+  main .left {
+    width: 75%;
+  }
+}
+main .left img {
+  max-width: 100%;
+}
+main .right {
+  width: 50%;
+  text-align: left;
+}
+@media (max-width: 620px) {
+  main .right {
+    width: 75%;
+  }
+}
+main .right h1 {
+  font-size: 4vmin;
+  width: 60%;
+}
+main .right p {
+  font-size: 2vmin;
+}
+main .right ul {
+  padding: 35px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2vmin;
+}
+main .right ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: blue;
+  flex-grow: 1;
+  margin: 0 10px;
+  padding: 10px 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+main .right ul a {
+  color: white;
+}
+main .right li:first-child {
+  margin-left: 0;
+}
+@media (max-width: 1024px) {
+  main .right li:first-child {
+    max-width: 30%;
+  }
+}
+@media (max-width: 1024px) {
+  main .right li:nth-child(n+2) {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
